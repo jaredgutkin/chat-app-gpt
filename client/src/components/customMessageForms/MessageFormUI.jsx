@@ -71,7 +71,7 @@ const MessageFormUI = ({
   </div>
 </div>
 
-  )
-}
+  );
+};
 
 export default MessageFormUI

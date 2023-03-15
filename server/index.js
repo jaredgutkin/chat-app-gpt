@@ -25,10 +25,11 @@ const configuration = new Configuration({
 export const openai = new OpenAIApi(configuration);
 
 /* Routes */
-app.use('/openai', openAiRoutes);
+app.use("/openai", openAiRoutes);
 
 /* SERVER SETUP */
 const PORT = process.env.PORT || 9000;
 app.listen(PORT, () => {
   console.log(`Example app listening at http://localhost:${PORT}`);
 });
+

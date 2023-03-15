@@ -1,6 +1,6 @@
-import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
+import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-export const api = createApi({
+export const api = createApi({ 
     baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_BASE_URL }),
     reducerPath: "main",
     tagTypes: [],
@@ -10,11 +10,11 @@ export const api = createApi({
                 url: "openai/text",
                 method: "POST",
                 body: payload,
-            })
-        })
-    })
+            }),
+        }),
+    }),
 });
 
 export const {
-    usePostAiTextMutation
+    usePostAiTextMutation,
 } = api;
